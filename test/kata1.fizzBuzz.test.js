@@ -7,7 +7,11 @@ describe("fizzBuzz", () => {
     expect(fizzBuzz(22146)).toMatch("Fizz");
   });
 
-  test("returns Buzz when passed a multiple of 5", () => {});
+  test("returns Buzz when passed a multiple of 5", () => {
+    expect(fizzBuzz(5)).toMatch("Buzz");
+    expect(fizzBuzz(110)).toMatch("Buzz");
+    expect(fizzBuzz(410)).toMatch("Buzz");
+  });
 
   test("returns FizzBuzz when passed a multiple 3 and 5", () => {});
 
