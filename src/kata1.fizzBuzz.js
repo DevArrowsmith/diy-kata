@@ -6,6 +6,8 @@ const fizzBuzz = number => {
         return "Fizz";
     } else if (!(number%5)) {
         return "Buzz";
+    } else {
+        return number;
     };
 };
 
