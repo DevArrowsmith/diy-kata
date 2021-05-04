@@ -13,7 +13,11 @@ describe("fizzBuzz", () => {
     expect(fizzBuzz(410)).toMatch("Buzz");
   });
 
-  test("returns FizzBuzz when passed a multiple 3 and 5", () => {});
+  test("returns FizzBuzz when passed a multiple 3 and 5", () => {
+    expect(fizzBuzz(15)).toMatch("FizzBuzz");
+    expect(fizzBuzz(105)).toMatch("FizzBuzz");
+    expect(fizzBuzz(690)).toMatch("FizzBuzz");
+  });
 
   test("returns the number when it isn't a multiple of 3 or 5", () => {});
 });
