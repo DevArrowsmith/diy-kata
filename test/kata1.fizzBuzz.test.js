@@ -19,5 +19,9 @@ describe("fizzBuzz", () => {
     expect(fizzBuzz(690)).toMatch("FizzBuzz");
   });
 
-  test("returns the number when it isn't a multiple of 3 or 5", () => {});
+  test("returns the number when it isn't a multiple of 3 or 5", () => {
+    expect(fizzBuzz(1)).toBe(1);
+    expect(fizzBuzz(82)).toBe(82);
+    expect(fizzBuzz(6478)).toBe(6478);
+  });
 });
