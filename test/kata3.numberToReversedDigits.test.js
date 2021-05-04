@@ -10,4 +10,7 @@ describe("numberToReversedDigits", () => {
     expect(numberToReversedDigits([1, 2, 3])).toBe("Non-number value entered. Please enter a number.");
     expect(numberToReversedDigits("Coffee")).toBe("Non-number value entered. Please enter a number.");
   });
+  test("return an error if NaN is passed in", () => {
+    expect(numberToReversedDigits(NaN)).toBe("Non-number value entered. Please enter a number.");
+  });
 });
