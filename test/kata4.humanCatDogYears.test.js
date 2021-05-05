@@ -35,4 +35,9 @@ describe ("humanCatDogYears", () => {
     test("returns an error if NaN is passed in", () => {
         expect(humanCatDogYears(NaN)).toBe("Non-number value entered. Please enter a number.");
     });
+    test("returns an error if a negative number is passed in", () => {
+        expect(humanCatDogYears(-1)).toBe("Please enter a positive number.");
+        expect(humanCatDogYears(-0.1)).toBe("Please enter a positive number.");
+        expect(humanCatDogYears(-120)).toBe("Please enter a positive number.");
+    });
 });
