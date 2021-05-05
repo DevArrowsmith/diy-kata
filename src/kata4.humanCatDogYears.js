@@ -1,3 +1,5 @@
-const humanCatDogYears = number => {};
+const humanCatDogYears = number => {
+    return [];
+};
 
 module.exports = humanCatDogYears;
