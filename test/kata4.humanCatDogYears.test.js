@@ -13,4 +13,11 @@ describe ("humanCatDogYears", () => {
     test("all elements in the array are not NaN", () => {
         expect(humanCatDogYears(1).map(e => Number.isNaN(e))).toStrictEqual([false, false, false]);
     });
+    test("the second value in the array is the first value in cat years", () => {
+        expect(humanCatDogYears(0)[1]).toBe(0);
+        expect(humanCatDogYears(1)[1]).toBe(15);
+        expect(humanCatDogYears(2)[1]).toBe(24);
+        expect(humanCatDogYears(3)[1]).toBe(28);
+        expect(humanCatDogYears(8)[1]).toBe(48);
+    })
 });
