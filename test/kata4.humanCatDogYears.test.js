@@ -27,4 +27,9 @@ describe ("humanCatDogYears", () => {
         expect(humanCatDogYears(3)[2]).toBe(29);
         expect(humanCatDogYears(8)[2]).toBe(54);
     });
+    test("returns an error if a non-number value is passed in", () => {
+        expect(humanCatDogYears(true)).toBe("Non-number value entered. Please enter a number.");
+        expect(humanCatDogYears([1, 2, 3])).toBe("Non-number value entered. Please enter a number.");
+        expect(humanCatDogYears("Coffee")).toBe("Non-number value entered. Please enter a number.");
+    });
 });
