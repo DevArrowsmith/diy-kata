@@ -4,6 +4,10 @@ const humanCatDogYears = number => {
         return "Non-number value entered. Please enter a number."
     };
 
+    if (number < 0) {
+        return "Please enter a positive number."
+    };
+
     const ages = [number];
     let catYears = 0;
     let dogYears = 0;
