@@ -40,4 +40,14 @@ describe ("humanCatDogYears", () => {
         expect(humanCatDogYears(-0.1)).toBe("Please enter a positive number.");
         expect(humanCatDogYears(-120)).toBe("Please enter a positive number.");
     });
+    test("returns correct values based on rounding down if a floating point number is passed in", () => {
+        expect(humanCatDogYears(0.9)[1]).toBe(0);
+        expect(humanCatDogYears(0.1)[2]).toBe(0);
+        expect(humanCatDogYears(1.2)[1]).toBe(15);
+        expect(humanCatDogYears(1.8)[2]).toBe(15);
+        expect(humanCatDogYears(2.7)[1]).toBe(24);
+        expect(humanCatDogYears(2.3)[2]).toBe(24);
+        expect(humanCatDogYears(3.4)[1]).toBe(28);
+        expect(humanCatDogYears(3.5)[2]).toBe(29);
+    });
 });
