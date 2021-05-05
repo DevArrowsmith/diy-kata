@@ -1,6 +1,6 @@
 const humanCatDogYears = number => {
 
-    if (typeof(number) !== "number") {
+    if (typeof(number) !== "number" || isNaN(number)) {
         return "Non-number value entered. Please enter a number."
     };
 
