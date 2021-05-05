@@ -19,5 +19,12 @@ describe ("humanCatDogYears", () => {
         expect(humanCatDogYears(2)[1]).toBe(24);
         expect(humanCatDogYears(3)[1]).toBe(28);
         expect(humanCatDogYears(8)[1]).toBe(48);
-    })
+    });
+    test("the third value in the array is the first value in dog years", () => {
+        expect(humanCatDogYears(0)[2]).toBe(0);
+        expect(humanCatDogYears(1)[2]).toBe(15);
+        expect(humanCatDogYears(2)[2]).toBe(24);
+        expect(humanCatDogYears(3)[2]).toBe(29);
+        expect(humanCatDogYears(8)[2]).toBe(54);
+    });
 });
