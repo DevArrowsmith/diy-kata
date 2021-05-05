@@ -32,4 +32,7 @@ describe ("humanCatDogYears", () => {
         expect(humanCatDogYears([1, 2, 3])).toBe("Non-number value entered. Please enter a number.");
         expect(humanCatDogYears("Coffee")).toBe("Non-number value entered. Please enter a number.");
     });
+    test("returns an error if NaN is passed in", () => {
+        expect(humanCatDogYears(NaN)).toBe("Non-number value entered. Please enter a number.");
+    });
 });
