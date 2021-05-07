@@ -7,7 +7,7 @@ describe("reachDestination", () => {
   });
 
 
-  test("returns the string with singular 'hours' when arrival will be in one hour", () => {
+  test("returns the string with singular 'hour' when arrival will be in one hour", () => {
     expect(reachDestination(80, 80)).toBe("I should be there in 1 hour.");
   });
 });
