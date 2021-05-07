@@ -13,4 +13,4 @@ const employees = [
     }
 ];
 
-module.exports = employees;
+module.exports = { employees };
