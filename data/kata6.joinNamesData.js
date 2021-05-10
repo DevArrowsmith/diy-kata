@@ -22,4 +22,8 @@ const witches = [
     {name: 'Aching'},
 ];
 
-module.exports = { simpsons, willows, witches };
+const castaways = [
+    {name: 'Wilson'}
+];
+
+module.exports = { simpsons, willows, witches, castaways };
